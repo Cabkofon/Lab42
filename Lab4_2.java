@@ -1,7 +1,6 @@
 public class main {
      public static void main(String[] args) { 
 	Product product = new Product("Edam", 3.3, 120);
-        product.changeBalance(9);
 	System.out.println("Product value is " + product.countValue());
 	product.printProduct();
      }
@@ -16,11 +15,6 @@ public class main {
 		this.price = price;
 		this.amount = amount;
 	}
-        
-        public int changeBalance(int newvalue){
-            this.amount = newvalue;
-            return amount;
-        }
         
 	public double countValue() {
 		return(amount * price);
